@@ -17,19 +17,47 @@
       margin:0;
     }
 
+    /* Opening-Page CSS */
     .Opening-Page{
       width: 100%;height:716px;background-color: black;position:relative
-
-
-
     }
     .title-group{
       padding: 20px;position:relative;top:40%;
-
     }
     .title-group>.t-text{
       text-align:center;font-style:italic;font-size:23px;margin-bottom:0px;color: white;margin-top: 0px;
     }
+
+    /* About Me CSS */
+    .about-me-title{
+      text-align: center;margin-top: 70px;font-size: 45px;
+    }
+    .about-me-text{
+      text-align: center;padding-left:18%;padding-right: 15%;
+    }
+    .about-me-text p{
+      text-align: left;
+    }
+    .about-me-article{
+      text-align: center;margin-bottom: 40px
+    }
+    .about-me-article-text{
+      display:inline-block;width:43.8%;vertical-align: top;
+
+    }
+    .about-me-article-pic{
+      display:inline-block;width:20%;vertical-align: top;
+    }
+    .about-me-article-text p{
+      text-align: left;
+    }
+    .about-me-article-text-buttom{
+      background: #678;font-size: 18px;padding: 10px;margin-top: 10px;text-align: left;text-decoration:none;border-radius: 18px;text;color:white;font-weight: bold;
+    }
+    .about-me-article-text-buttom:hover{
+
+    }
+
   </style>
 
 </head>
@@ -40,6 +68,28 @@
     <div class="title-group">
       <p class="t-text">Hello, I'm</p>
       <div class="t-title-text" style="text-align:center;font-size:65px;"><strong style="color:white">- IAN HSU -</strong></div>
+    </div>
+  </div>
+
+  <!-- About Me -->
+  <div class="about-me">
+    <div class="about-me-title">
+      <p><strong>- About Me -</strong></p>
+    </div>
+    <div class="about-me-text">
+      <p>This is Ian Hsu. As a Product Manager, Digital Marketer, and traveler. I love inventing, breaking the rules, making mistakes, taking the risk, experimenting, and have fun. I would like to start an idea with hands-on prototyping to high-level programming.</p>
+      <p style="margin-bottom:40px">I can work alone efficiently, but collaborating with people from diverse backgrounds is much more fun. I believe live and work can have a perfect balance and have a significant life with no regret. Building upon my solid academic background in engineering and extensive work experience in information management in the media industry, I am seeking to enhance my abilities of user experience (UX) design, coding skills and develop new technology with considerations of technical feasibility, user desirability, and business viability.</p>
+    </div>
+    <div class="about-me-article">
+      <div class="about-me-article-text">
+          <p><a target="_blank" href="" style="text-align:left;line height:1.45;font-size:30px;text-decoration:none;">My advice to new grads, after two years in the wild</a></p>
+          <p>After getting my computer science degree from Duke in 2015, I joined Google as a software engineer and co-founded Dancing Pineapple. These first two years in tech and music were filled with a rapid succession of ups and downs, and plenty of hard-won lessons.</p>
+          <p style="margin-bottom:35px">I know that these lessons would have been really useful for me after my own graduation, so I decided to take some time to share some actionable advice for those of you just starting out in the real world.</p>
+          <p><a class="about-me-article-text-buttom" href="" data-component="buttom" target="_blank">Read my advice</a></p>
+      </div>
+      <div class="about-me-article-pic">
+        <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/9621/734352cf-6bea-4da2-af7b-1f3b43c91c0e_pieheb.jpg" style="height:100%;width:100%;margin-top:20px"></img>
+      </div>
     </div>
   </div>
 
