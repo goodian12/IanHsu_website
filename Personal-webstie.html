@@ -14,8 +14,19 @@
 <!-- CSS part -->
   <style type="text/css">
     body{
-      margin:0;
+      margin:0;font-family: 'gotham rounded','open sans', sans-serif;
     }
+
+    /* Word Type */
+    @font-face{font-family:Gotham Rounded;font-style:normal;font-weight:500;src:url(https://static-assets.strikinglycdn.com/fonts/gothamrnd-book.6621f7aaa4ba407d660062f5bb9fee1c.eot);src:url(https://static-assets.strikinglycdn.com/fonts/gothamrnd-book.6621f7aaa4ba407d660062f5bb9fee1c.eot?#iefix) format("embedded-opentype"),url(https://static-assets.strikinglycdn.com/fonts/gothamrnd-book.3224195bcb8490e0f70ec00fce1fa59d.woff) format("woff"),url(https://static-assets.strikinglycdn.com/fonts/gothamrnd-book.8572f36da289b314a7b4de8cca1fe77c.ttf) format("truetype"),url(https://static-assets.strikinglycdn.com/fonts/gothamrnd-book.6fd9252cb948c0be27a0060ac5adb562.svg#GothamRounded) format("svg")}
+    @font-face{font-family:Gotham Rounded;font-style:normal;font-weight:300;src:url(https://static-assets.strikinglycdn.com/fonts/gothamrnd-light.04c829fbce61454f6910c810cb81ce36.eot);src:url(https://static-assets.strikinglycdn.com/fonts/gothamrnd-light.04c829fbce61454f6910c810cb81ce36.eot?#iefix) format("embedded-opentype"),url(https://static-assets.strikinglycdn.com/fonts/gothamrnd-light.3d4d389aff7100a6b3b7825946387a87.woff) format("woff"),url(https://static-assets.strikinglycdn.com/fonts/gothamrnd-light.0269d50dc0275de76fd0f6ec19938146.ttf) format("truetype"),url(https://static-assets.strikinglycdn.com/fonts/gothamrnd-light.a9e3a2ab3b36f9b4db979d62b75e2f3f.svg#GothamRounded) format("svg")}
+    @font-face{font-family:Roboto;font-style:italic;font-weight:300;src:local('Roboto Light Italic'),local('Roboto-LightItalic'),url(https://fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51TjASc0CsE.ttf) format('truetype')}
+    @font-face{font-family:Brandon;font-style:normal;font-weight:700;src:url(https://static-assets.strikinglycdn.com/fonts/brandon_bld-webfont.10b50ee4aa9930dd26ae117a07e922eb.eot);src:url(https://static-assets.strikinglycdn.com/fonts/brandon_bld-webfont.10b50ee4aa9930dd26ae117a07e922eb.eot?#iefix) format("embedded-opentype"),url(https://static-assets.strikinglycdn.com/fonts/brandon_bld-webfont.2bf5f4d8928806f7c91c290b5814aff9.woff) format("woff"),url(https://static-assets.strikinglycdn.com/fonts/brandon_bld-webfont.70c7d99488f7e8cf27634e9c58bf6217.ttf) format("truetype"),url(https://static-assets.strikinglycdn.com/fonts/brandon_bld-webfont.44a3e64aa120d1b7964f10be29ad878b.svg#BrandonGrotesqueBoldRegular) format("svg")}
+    @font-face{font-family:Brandon;font-style:normal;font-weight:300;src:url(https://static-assets.strikinglycdn.com/fonts/brandon_light-webfont.d23193b7e25a59254d67a04a9f6d4eaa.eot);src:url(https://static-assets.strikinglycdn.com/fonts/brandon_light-webfont.d23193b7e25a59254d67a04a9f6d4eaa.eot?#iefix) format("embedded-opentype"),url(https://static-assets.strikinglycdn.com/fonts/brandon_light-webfont.90829ddb7531a53c1dcd670d545999d2.woff) format("woff"),url(https://static-assets.strikinglycdn.com/fonts/brandon_light-webfont.2c18926b679dfb8abff6fc13c2b8beeb.ttf) format("truetype"),url(https://static-assets.strikinglycdn.com/fonts/brandon_light-webfont.518c0c41a5141b2e59732f43d9b70575.svg#BrandonGrotesqueLight) format("svg")}
+    @font-face{font-family:open_sans;font-style:normal;font-weight:300;src:url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Light-webfont.09e00aa7622ece30a0f1e06b55f66c2a.eot);src:url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Light-webfont.09e00aa7622ece30a0f1e06b55f66c2a.eot?#iefix) format("embedded-opentype"),url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Light-webfont.45b47f3e9c7d74b80f5c6e0a3c513b23.woff) format("woff"),url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Light-webfont.2e98fc3ce85f31f63010b706259cb604.ttf) format("truetype"),url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Light-webfont.8f04ed9aeb2185499068d84842b95aa1.svg#open_sanslight) format("svg")}
+    @font-face{font-family:open_sans;font-style:normal;font-weight:400;src:url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Regular-webfont.c4d82460ef260eb1589e73528cbfb257.eot);src:url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Regular-webfont.c4d82460ef260eb1589e73528cbfb257.eot?#iefix) format("embedded-opentype"),url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Regular-webfont.79515ad0788973c533405f7012dfeccd.woff) format("woff"),url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Regular-webfont.488d5cc145299ba07b75495100419ee6.ttf) format("truetype"),url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Regular-webfont.8185eb3059c46e4169ce107dfcf85950.svg#open_sansregular) format("svg")}
+    @font-face{font-family:open_sans;font-style:normal;font-weight:600;src:url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Semibold-webfont.f28eb362fb6afe946d822ee5451c2146.eot);src:url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Semibold-webfont.f28eb362fb6afe946d822ee5451c2146.eot?#iefix) format("embedded-opentype"),url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Semibold-webfont.697574b47bcfdd2c45e3e63c7380dd67.woff) format("woff"),url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Semibold-webfont.b32acea6fd3c228b5059042c7ad21c55.ttf) format("truetype"),url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Semibold-webfont.3f6b1eed8a0832d6f316fc26526348a8.svg#open_sanssemibold) format("svg")}
+    @font-face{font-family:open_sans;font-style:italic;font-weight:600;src:url(https://static-assets.strikinglycdn.com/fonts/OpenSans-SemiboldItalic-webfont.70bafcaaadad9e17b9c7784abbc6b1c2.eot);src:url(https://static-assets.strikinglycdn.com/fonts/OpenSans-SemiboldItalic-webfont.70bafcaaadad9e17b9c7784abbc6b1c2.eot?#iefix) format("embedded-opentype"),url(https://static-assets.strikinglycdn.com/fonts/OpenSans-SemiboldItalic-webfont.719f7321a8366f4ee609737026432113.woff) format("woff"),url(https://static-assets.strikinglycdn.com/fonts/OpenSans-SemiboldItalic-webfont.64f886b232962979e2eaf29d93108286.ttf) format("truetype"),url(https://static-assets.strikinglycdn.com/fonts/OpenSans-SemiboldItalic-webfont.70eb93d7ba2ad241180085a9a74b0b95.svg#open_sanssemibold_italic) format("svg")}
 
     /* Opening-Page CSS */
     .Opening-Page{
@@ -95,7 +106,7 @@
       text-align: center;padding-top: 55px;font-size: 45px;
     }
     .the-way-I-lived-group-img{
-      text-align: center;
+      text-align: center;padding-bottom: 130px
     }
     .the-way-I-lived-group-img1{
       display:inline-block;vertical-align: top;filter: grayscale(100%);
@@ -162,6 +173,21 @@
     }
     .the-way-I-lived-group-img11:hover{
       filter: grayscale(0%);
+    }
+
+
+    /* Contact Me CSS */
+    .contact-me{
+      text-align: center;margin: 0px auto;
+    }
+    .contact-me-title {
+      text-align: center;padding-top: 55px;font-size: 35px;display:inline-block
+    }
+    .contact-me-content{
+      text-align: center;font-size: 23px
+    }
+    .contact-me-logo{
+      margin: 0 auto;text-align: center;padding-bottom: 200px
     }
 
   </style>
@@ -356,7 +382,27 @@
   </div>
 
   <!-- Contact Me -->
+  <div class="contact-me">
+    <div style="display:inline-block;font-size: 45px;vertical-align:top;padding-top: 90px;padding-right:30px">
+      <p><strong>-</strong></p>
+    </div>
+    <div class="contact-me-title">
+      <p style="margin-bottom:0px;line-height:1.4"><strong>Develop new technology with  </strong></p>
+      <p style="margin-bottom:0px;margin-top:0px;line-height:1.4"><strong>considerations of technical feasibility,</strong></p>
+      <p style="margin-bottom:0px;margin-top:0px;line-height:1.4"><strong>user desirability, and business viability.</strong> </p>
+    </div>
+    <div style="display:inline-block;font-size: 45px;vertical-align:top;padding-top: 90px;padding-left:30px">
+      <p><strong>-</strong></p>
+    </div>
+    <div class="contact-me-content">
+      <p style="margin-top:20px">Let's talk. <a href="" target="_blank" style="text-decoration:none;color:#37c">LinkedIn</a> or <a href="" target="_blank" style="text-decoration:none;color:#37c">Email</a> work best </p>
+    </div>
+    <div class="contact-me-logo">
+      <a href="http://bit.ly/2rdr17p" target="_blank"><img src="http://res.cloudinary.com/ddyr9rwb5/image/upload/q_100/v1525232898/LinkedIn-icon.png" style="width:130px;height:130px;padding-right:5px"></img></a>
+      <a href="" target="_blank"><img src="http://res.cloudinary.com/ddyr9rwb5/image/upload/q_100/v1525232898/gmail-icon.png" style="width:130px;height:130px;padding-left:5px"></img></a>
 
+    </div>
+  </div>
 
 </body>
 
