@@ -14,15 +14,15 @@
 <!-- CSS part -->
   <style type="text/css">
     body{
-      margin:0;font-family: 'gotham rounded','open sans', sans-serif;
+      margin:0;
     }
 
     /* Word Type */
     @font-face{font-family:Gotham Rounded;font-style:normal;font-weight:500;src:url(https://static-assets.strikinglycdn.com/fonts/gothamrnd-book.6621f7aaa4ba407d660062f5bb9fee1c.eot);src:url(https://static-assets.strikinglycdn.com/fonts/gothamrnd-book.6621f7aaa4ba407d660062f5bb9fee1c.eot?#iefix) format("embedded-opentype"),url(https://static-assets.strikinglycdn.com/fonts/gothamrnd-book.3224195bcb8490e0f70ec00fce1fa59d.woff) format("woff"),url(https://static-assets.strikinglycdn.com/fonts/gothamrnd-book.8572f36da289b314a7b4de8cca1fe77c.ttf) format("truetype"),url(https://static-assets.strikinglycdn.com/fonts/gothamrnd-book.6fd9252cb948c0be27a0060ac5adb562.svg#GothamRounded) format("svg")}
     @font-face{font-family:Gotham Rounded;font-style:normal;font-weight:300;src:url(https://static-assets.strikinglycdn.com/fonts/gothamrnd-light.04c829fbce61454f6910c810cb81ce36.eot);src:url(https://static-assets.strikinglycdn.com/fonts/gothamrnd-light.04c829fbce61454f6910c810cb81ce36.eot?#iefix) format("embedded-opentype"),url(https://static-assets.strikinglycdn.com/fonts/gothamrnd-light.3d4d389aff7100a6b3b7825946387a87.woff) format("woff"),url(https://static-assets.strikinglycdn.com/fonts/gothamrnd-light.0269d50dc0275de76fd0f6ec19938146.ttf) format("truetype"),url(https://static-assets.strikinglycdn.com/fonts/gothamrnd-light.a9e3a2ab3b36f9b4db979d62b75e2f3f.svg#GothamRounded) format("svg")}
     @font-face{font-family:Roboto;font-style:italic;font-weight:300;src:local('Roboto Light Italic'),local('Roboto-LightItalic'),url(https://fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51TjASc0CsE.ttf) format('truetype')}
-    @font-face{font-family:Roboto;font-style:normal;font-weight:300;src:local('Roboto Light'),local('Roboto-Light'),url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fChc9.ttf) format('truetype')}
     @font-face{font-family:Roboto;font-style:normal;font-weight:700;src:local('Roboto Bold'),local('Roboto-Bold'),url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfChc9.ttf) format('truetype')}.clearfix{position:relative}.clearfix:after{clear:both;content:"";display:table}
+    @font-face{font-family:Roboto;font-style:normal;font-weight:300;src:local('Roboto Light'),local('Roboto-Light'),url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fChc9.ttf) format('truetype')}
     @font-face{font-family:Brandon;font-style:normal;font-weight:700;src:url(https://static-assets.strikinglycdn.com/fonts/brandon_bld-webfont.10b50ee4aa9930dd26ae117a07e922eb.eot);src:url(https://static-assets.strikinglycdn.com/fonts/brandon_bld-webfont.10b50ee4aa9930dd26ae117a07e922eb.eot?#iefix) format("embedded-opentype"),url(https://static-assets.strikinglycdn.com/fonts/brandon_bld-webfont.2bf5f4d8928806f7c91c290b5814aff9.woff) format("woff"),url(https://static-assets.strikinglycdn.com/fonts/brandon_bld-webfont.70c7d99488f7e8cf27634e9c58bf6217.ttf) format("truetype"),url(https://static-assets.strikinglycdn.com/fonts/brandon_bld-webfont.44a3e64aa120d1b7964f10be29ad878b.svg#BrandonGrotesqueBoldRegular) format("svg")}
     @font-face{font-family:Brandon;font-style:normal;font-weight:300;src:url(https://static-assets.strikinglycdn.com/fonts/brandon_light-webfont.d23193b7e25a59254d67a04a9f6d4eaa.eot);src:url(https://static-assets.strikinglycdn.com/fonts/brandon_light-webfont.d23193b7e25a59254d67a04a9f6d4eaa.eot?#iefix) format("embedded-opentype"),url(https://static-assets.strikinglycdn.com/fonts/brandon_light-webfont.90829ddb7531a53c1dcd670d545999d2.woff) format("woff"),url(https://static-assets.strikinglycdn.com/fonts/brandon_light-webfont.2c18926b679dfb8abff6fc13c2b8beeb.ttf) format("truetype"),url(https://static-assets.strikinglycdn.com/fonts/brandon_light-webfont.518c0c41a5141b2e59732f43d9b70575.svg#BrandonGrotesqueLight) format("svg")}
     @font-face{font-family:open_sans;font-style:normal;font-weight:300;src:url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Light-webfont.09e00aa7622ece30a0f1e06b55f66c2a.eot);src:url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Light-webfont.09e00aa7622ece30a0f1e06b55f66c2a.eot?#iefix) format("embedded-opentype"),url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Light-webfont.45b47f3e9c7d74b80f5c6e0a3c513b23.woff) format("woff"),url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Light-webfont.2e98fc3ce85f31f63010b706259cb604.ttf) format("truetype"),url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Light-webfont.8f04ed9aeb2185499068d84842b95aa1.svg#open_sanslight) format("svg")}
@@ -30,6 +30,9 @@
     @font-face{font-family:open_sans;font-style:normal;font-weight:600;src:url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Semibold-webfont.f28eb362fb6afe946d822ee5451c2146.eot);src:url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Semibold-webfont.f28eb362fb6afe946d822ee5451c2146.eot?#iefix) format("embedded-opentype"),url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Semibold-webfont.697574b47bcfdd2c45e3e63c7380dd67.woff) format("woff"),url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Semibold-webfont.b32acea6fd3c228b5059042c7ad21c55.ttf) format("truetype"),url(https://static-assets.strikinglycdn.com/fonts/OpenSans-Semibold-webfont.3f6b1eed8a0832d6f316fc26526348a8.svg#open_sanssemibold) format("svg")}
     @font-face{font-family:open_sans;font-style:italic;font-weight:600;src:url(https://static-assets.strikinglycdn.com/fonts/OpenSans-SemiboldItalic-webfont.70bafcaaadad9e17b9c7784abbc6b1c2.eot);src:url(https://static-assets.strikinglycdn.com/fonts/OpenSans-SemiboldItalic-webfont.70bafcaaadad9e17b9c7784abbc6b1c2.eot?#iefix) format("embedded-opentype"),url(https://static-assets.strikinglycdn.com/fonts/OpenSans-SemiboldItalic-webfont.719f7321a8366f4ee609737026432113.woff) format("woff"),url(https://static-assets.strikinglycdn.com/fonts/OpenSans-SemiboldItalic-webfont.64f886b232962979e2eaf29d93108286.ttf) format("truetype"),url(https://static-assets.strikinglycdn.com/fonts/OpenSans-SemiboldItalic-webfont.70eb93d7ba2ad241180085a9a74b0b95.svg#open_sanssemibold_italic) format("svg")}
 
+    .s-p-style{
+      font-family:'Roboto','open sans', sans-serif;line-height:1.35;
+    }
     /* Opening-Page CSS */
     .Opening-Page{
       width: 100%;height:716px;
@@ -48,6 +51,9 @@
         background-size: cover;
         ;position:relative
     }
+    .menu-mobile{
+      position: absolute;margin: 0 auto;background-color: white;height: 30px;width:30px;padding-top:20px;padding-left: 20px
+    }
     .title-group{
       padding: 20px;position:relative;top:40%;
     }
@@ -62,7 +68,7 @@
 
     /* About Me CSS */
     .about-me-title{
-      text-align: center;padding-top: 60px;font-size: 45px;background-color:#eee;
+      text-align: center;padding-top: 60px;font-size: 45px;background-color:#eee;font-family: 'Brandon',"Roboto",sans-serif;
     }
     .about-me-text{
       text-align: center;padding-left:18%;padding-right: 15%;
@@ -71,7 +77,7 @@
       text-align: left;
     }
     .about-me-article{
-      text-align: center;margin-bottom: 40px;padding-bottom: 85px;
+      text-align: center;margin-bottom: 40px;padding-bottom: 85px;direction:rtl;
     }
     .about-me-article-text{
       display:inline-block;;vertical-align: top;width:42.2%;
@@ -91,7 +97,7 @@
 
     /* My Work CSS */
     .my-work-title{
-      text-align: center;padding-top: 55px;font-size: 45px;
+      text-align: center;padding-top: 55px;font-size: 45px;font-family: 'Brandon',"Roboto",sans-serif;
     }
     .my-work-text{
       text-align: center;padding-left:18%;padding-right: 15%;
@@ -104,6 +110,9 @@
     }
     .my-work-article-text{
       display:inline-block;width:42.2%;vertical-align: top;
+    }
+    .my-work-article-text-title{
+      color:#37c;text-align:left;line height:1.45;font-size:30px;text-decoration:none;
     }
     .my-work-article-pic{
       display:inline-block;width:19%;vertical-align: top;padding-right: 40px;border-radius:15px;margin-top: 0px
@@ -125,7 +134,10 @@
 
     }
     .the-way-I-lived-title{
-      text-align: center;padding-top: 55px;font-size: 45px;
+      text-align: center;padding-top: 55px;font-size: 45px;font-family: 'Brandon',"Roboto",sans-serif;
+    }
+    .the-way-I-lived-title-content{
+      text-align:center;padding-left:18%;padding-right: 18%;margin-top;color:#678;
     }
 
     /*
@@ -205,7 +217,7 @@
       text-align: center;padding-bottom: 90px
     }
     .row > .column {
-      padding: 0 8px;
+      padding: 0 auto;
       text-align: center;
     }
 
@@ -336,7 +348,7 @@
       text-align: center;margin: 0px auto;
     }
     .contact-me-title {
-      text-align: center;padding-top: 55px;font-size: 35px;display:inline-block
+      text-align: center;padding-top: 55px;font-size: 35px;display:inline-block;
     }
     .contact-me-content{
       text-align: center;font-size: 23px
@@ -351,6 +363,81 @@
       .parallax {
         background-attachment: scroll;
       }
+    }
+
+    @media(max-width:727px) {
+      .about-me-text{
+        text-align: center;padding-left:15%;padding-right: 15%;
+      }
+      .about-me-article{
+        padding-left:15%;padding-right: 15%;direction:rtl;
+      }
+      .about-me-article-text{
+        width:100%;vertical-align: top;
+      }
+      .about-me-article-pic{
+        width:90%;vertical-align: top;padding-left: 10px;
+      }
+      .about-me-article{
+        padding-left:15%;padding-right: 15%;direction:rtl;
+      }
+      .my-work-article{
+        padding-left:15%;padding-right: 15%;
+      }
+      .my-work-article-text{
+        width:100%;vertical-align: top;padding-top: 15px;
+      }
+      .my-work-article-pic{
+        width:90%;vertical-align: top;padding-left: 10px
+      }
+      .contact-me-line1>p{
+          display: none;
+      }
+      .contact-me-line2>p{
+        display: none;
+      }
+    }
+    @media(max-width:500px) {
+      .about-me-text{
+        text-align: center;padding-left:5%;padding-right: 5%;
+      }
+      .about-me-article{
+        padding-left:5%;padding-right: 5%;
+      }
+      .about-me-article-text{
+        width:100%;vertical-align: top;
+      }
+      .about-me-article-pic{
+        width:100%;vertical-align: top;padding-left: 0px
+      }
+      .my-work-article{
+        padding-left:5%;padding-right: 5%;
+      }
+      .my-work-article-text{
+        width:100%;vertical-align: top;padding-top: 15px;
+      }
+      .my-work-article-text-title{
+        color:#37c;font-size: 23px;
+      }
+      .my-work-article-pic{
+        width:100%;vertical-align: top;padding-left: 0px
+      }
+      .contact-me-line1>p{
+        display: none;
+      }
+      .contact-me-line2>p{
+        display: none;
+      }
+      .the-way-I-lived-title-content{
+        padding-left:5%;padding-right: 5%;
+      }
+      .contact-me-title{
+        font-size: 20px
+      }
+      .contact-me-content-text{
+        font-size: 18px
+      }
+
     }
 
   </style>
@@ -407,9 +494,12 @@
 <body>
   <!-- Opening Page -->
   <div class="Opening-Page">
+    <div class="menu-mobile">
+      <img src="http://res.cloudinary.com/ddyr9rwb5/image/upload/q_94/v1525751120/menu-icon.png"/>
+    </div>
     <div class="title-group">
       <p class="t-text">Hello, I'm</p>
-      <div class="t-title-text" style="text-align:center;font-size:65px;"><strong style="color:white">- IAN HSU -</strong></div>
+      <div class="t-title-text" style="text-align:center;font-size:65px;font-family:'Brandon','Roboto',sans-serif;,"><strong style="color:white">- IAN HSU -</strong></div>
     </div>
   </div>
 
@@ -419,18 +509,18 @@
       <p><strong>- About Me -</strong></p>
     </div>
     <div class="about-me-text">
-      <p style="font-family:'open sans', sans-serif,Roboto;">This is Ian Hsu. As a Product Manager, Digital Marketer, and traveler. I love inventing, breaking the rules, making mistakes, taking the risk, experimenting, and have fun. I would like to start an idea with hands-on prototyping to high-level programming.</p>
-      <p style="margin-bottom:40px;font-family:'open sans', sans-serif,Roboto;">I can work alone efficiently, but collaborating with people from diverse backgrounds is much more fun. I believe live and work can have a perfect balance and have a significant life with no regret. Building upon my solid academic background in engineering and extensive work experience in information management in the media industry, I am seeking to enhance my abilities of user experience (UX) design, coding skills and develop new technology with considerations of technical feasibility, user desirability, and business viability.</p>
+      <p class="s-p-style">This is Ian Hsu. As a Product Manager, Digital Marketer, and traveler. I love inventing, breaking the rules, making mistakes, taking the risk, experimenting, and have fun. I would like to start an idea with hands-on prototyping to high-level programming.</p>
+      <p  class="s-p-style" style="margin-bottom:40px;">I can work alone efficiently, but collaborating with people from diverse backgrounds is much more fun. I believe live and work can have a perfect balance and have a significant life with no regret. Building upon my solid academic background in engineering and extensive work experience in information management in the media industry, I am seeking to enhance my abilities of user experience (UX) design, coding skills and develop new technology with considerations of technical feasibility, user desirability, and business viability.</p>
     </div>
     <div class="about-me-article">
-      <div class="about-me-article-text">
-          <p><a target="_blank" href="" style="text-align:left;line height:1.45;font-size:30px;text-decoration:none;">My advice to new grads, after two years in the wild</a></p>
-          <p style="font-family:'open sans', sans-serif,Roboto;">After getting my computer science degree from Duke in 2015, I joined Google as a software engineer and co-founded Dancing Pineapple. These first two years in tech and music were filled with a rapid succession of ups and downs, and plenty of hard-won lessons.</p>
-          <p style="margin-bottom:35px;font-family:'open sans', sans-serif,Roboto;">I know that these lessons would have been really useful for me after my own graduation, so I decided to take some time to share some actionable advice for those of you just starting out in the real world.</p>
-          <p><a class="about-me-article-text-buttom" style="font-family: roboto, helvetica, sans-serif;"href="" data-component="buttom" target="_blank">READ MY ADVICE</a></p>
-      </div>
       <div class="about-me-article-pic">
         <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/9621/734352cf-6bea-4da2-af7b-1f3b43c91c0e_pieheb.jpg" style="height:100%;width:100%;margin-top:25px"></img>
+      </div>
+      <div class="about-me-article-text">
+          <p><a target="_blank" href="" style="text-align:left;line height:1.45;font-size:30px;text-decoration:none;color:#37c">My advice to new grads, after two years in the wild</a></p>
+          <p class="s-p-style">After getting my engineering degree from Duke in 2014, I joined CW as a software engineer and co-founded Dancing Pineapple. These first two years in tech and music were filled with a rapid succession of ups and downs, and plenty of hard-won lessons.</p>
+          <p class="s-p-style"style="margin-bottom:35px;">I know that these lessons would have been really useful for me after my own graduation, so I decided to take some time to share some actionable advice for those of you just starting out in the real world.</p>
+          <p><a class="about-me-article-text-buttom" style="font-family: roboto, helvetica, sans-serif;"href="" data-component="buttom" target="_blank">READ MY ADVICE</a></p>
       </div>
     </div>
   </div>
@@ -448,10 +538,10 @@
         <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/9621/734352cf-6bea-4da2-af7b-1f3b43c91c0e_pieheb.jpg" style="height:100%;width:100%;margin-top:11px"></img>
       </div>
       <div class="my-work-article-text">
-          <p style="margin-bottom:0px;margin-top:0px"><a target="_blank" href="" style="text-align:left;line height:1.45;font-size:30px;text-decoration:none;margin-bottom:0px;margin-top:0px">Anchor film</a></p>
+          <p style="margin-bottom:0px;margin-top:0px"><a class="my-work-article-text-title" target="_blank" href="" >Anchor film</a></p>
           <p style="margin-bottom:0px;margin-top:3px"><a style="color:#227700"><strong>Technical Product Manager,  </strong><em><strong> found 2017</strong></em></a></p>
           <p style="margin-top:5px"><strong>Taipei.Taiwan</strong></p>
-          <p style="margin-bottom:35px;font-family:'open sans', sans-serif,Roboto;">Anchor film is a new startup which my friends and I founded in 2017 that bridges filmmakers and advertising companies on an easy-to-use information platform. Serving as the bridge between engineers and corporate clients, I propose (initiate/am responsible for) new designs of customized websites with user-centered concepts, user-friendly interfaces, and front-end development. Besides, I cooperated with back-end engineer to develop our company new management system platform.</p>
+          <p class="s-p-style" style="margin-bottom:35px;">Anchor film is a new startup which my friends and I founded in 2017 that bridges filmmakers and advertising companies on an easy-to-use information platform. Serving as the bridge between engineers and corporate clients, I propose (initiate/am responsible for) new designs of customized websites with user-centered concepts, user-friendly interfaces, and front-end development. Besides, I cooperated with back-end engineer to develop our company new management system platform.</p>
           <p ><a class="about-me-article-text-buttom" href="https://www.video-army.com/" data-component="buttom" target="_blank">VISIT WEBSITE</a></p>
       </div>
     </div>
@@ -462,10 +552,10 @@
         <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/9621/734352cf-6bea-4da2-af7b-1f3b43c91c0e_pieheb.jpg" style="height:100%;width:100%;margin-top:11px"></img>
       </div>
       <div class="my-work-article-text">
-          <p style="margin-bottom:0px;margin-top:0px"><a target="_blank" href="" style="text-align:left;line height:1.45;font-size:30px;text-decoration:none;">CommonWealth Magazine Group</a></p>
+          <p style="margin-bottom:0px;margin-top:0px"><a class="my-work-article-text-title" target="_blank" href="">CommonWealth Magazine Group</a></p>
           <p style="margin-bottom:0px;margin-top:3px"><a style="color:#227700"><strong>Digital Marketing Executive, </strong><em><strong> 2015-2017</strong></em></a></p>
           <p style="margin-top:5px"><strong>Taipei.Taiwan</strong></p>
-          <p style="margin-bottom:35px;font-family:'open sans', sans-serif,Roboto;">CommonWealth Magazine is one of the leading financial media in Asia. Serving as the bridge between engineers and corporate clients, I propose (initiate/am responsible for) new designs of customized websites with user-centered concepts and user-friendly interfaces. Up-to-date, I have managed more than ten website development projects and have collaborated with many world-leading corporations, such as Scholar, Johnnie Walker, UBS Group, Chanel, and Emirates. For each project, I oversee the whole development process from prototyping to launching, and I optimize website design through user experience surveys. With the enhanced user-friendly design, my team and I make it easier for users to browse the contents of our clients’ websites, and we achieve website traffic about 100,000 to 200,000 unique visitors per month, far exceeding our clients’ expectations.</p>
+          <p class="s-p-style" style="margin-bottom:35px;">CommonWealth Magazine is one of the leading financial media in Asia. Serving as the bridge between engineers and corporate clients, I propose (initiate/am responsible for) new designs of customized websites with user-centered concepts and user-friendly interfaces. Up-to-date, I have managed more than ten website development projects and have collaborated with many world-leading corporations, such as Scholar, Johnnie Walker, UBS Group, Chanel, and Emirates. For each project, I oversee the whole development process from prototyping to launching, and I optimize website design through user experience surveys. With the enhanced user-friendly design, my team and I make it easier for users to browse the contents of our clients’ websites, and we achieve website traffic about 100,000 to 200,000 unique visitors per month, far exceeding our clients’ expectations.</p>
           <p><a class="about-me-article-text-buttom" href="" data-component="buttom" target="_blank">Visit my work</a></p>
       </div>
     </div>
@@ -476,10 +566,10 @@
         <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/9621/734352cf-6bea-4da2-af7b-1f3b43c91c0e_pieheb.jpg" style="height:100%;width:100%;margin-top:11px"></img>
       </div>
       <div class="my-work-article-text">
-          <p style="margin-bottom:0px;margin-top:0px"><a target="_blank" href="" style="text-align:left;line height:1.45;font-size:30px;text-decoration:none;">Easylink Technology Beijing</a></p>
+          <p style="margin-bottom:0px;margin-top:0px"><a class="my-work-article-text-title" target="_blank" href="" >Easylink Technology Beijing</a></p>
           <p style="margin-bottom:0px;margin-top:3px"><a style="color:#227700"><strong>ASSISTANT DIRECTOR INTERN, </strong><em><strong> 2014 summer</strong></em></a></p>
           <p style="margin-top:5px"><strong>Beijing, China</strong></p>
-          <p style="margin-bottom:35px;font-family:'open sans', sans-serif,Roboto;" >I was the first, lucky intern to work with Easylink Technology Beijing as a assistant director. During the couple months, I had choice to interviewed end users to evaluate functions and interfaces. Prototyped and redesigned interfaces. Collaborated with back-end developers and designers to adjust the interfaces and launch our new servies. Also responsible for running user testing of applications, software, and websites. This startup crash-course of a summer flooded me with opportunities to osmose bits of wisdom from founders, engineers, investors, and other leaders in Beijing.</p>
+          <p class="s-p-style" style="margin-bottom:35px;" >I was the first, lucky intern to work with Easylink Technology Beijing as a assistant director. During the couple months, I had choice to interviewed end users to evaluate functions and interfaces. Prototyped and redesigned interfaces. Collaborated with back-end developers and designers to adjust the interfaces and launch our new servies. Also responsible for running user testing of applications, software, and websites. This startup crash-course of a summer flooded me with opportunities to osmose bits of wisdom from founders, engineers, investors, and other leaders in Beijing.</p>
           <p><a class="about-me-article-text-buttom" href="" data-component="buttom" target="_blank">VISIT WEBSITE</a></p>
       </div>
     </div>
@@ -490,10 +580,10 @@
         <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/9621/734352cf-6bea-4da2-af7b-1f3b43c91c0e_pieheb.jpg" style="height:100%;width:100%;margin-top:11px"></img>
       </div>
       <div class="my-work-article-text">
-          <p style="margin-bottom:0px;margin-top:0px"><a target="_blank" href="" style="text-align:left;line height:1.45;font-size:30px;text-decoration:none;">ASUS CEO Program</a></p>
+          <p style="margin-bottom:0px;margin-top:0px"><a class="my-work-article-text-title" target="_blank" href="">ASUS CEO Program</a></p>
           <p style="margin-bottom:0px;margin-top:3px"><a style="color:#227700"><strong>Marketing and Sales Intern, </strong><em><strong> 2012</strong></em></a></p>
           <p style="margin-top:5px"><strong>Taipei, Taiwan</strong></p>
-          <p style="margin-bottom:35px;font-family:'open sans', sans-serif,Roboto;">ASUS CEO program allowed me have choice to learn from the ASUS marketing and sales managers and executive lots of marketing campaign and projects by ourself. As a marketing and sales intern, I had to sales our products and services in Computex Show and also answered the technical questions. </p>
+          <p class="s-p-style" style="margin-bottom:35px;">ASUS CEO program allowed me have choice to learn from the ASUS marketing and sales managers and executive lots of marketing campaign and projects by ourself. As a marketing and sales intern, I had to sales our products and services in Computex Show and also answered the technical questions. </p>
           <p><a class="about-me-article-text-buttom" href="" data-component="buttom" target="_blank">VISIT WEBSITE</a></p>
       </div>
     </div>
@@ -504,10 +594,10 @@
         <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/9621/734352cf-6bea-4da2-af7b-1f3b43c91c0e_pieheb.jpg" style="height:100%;width:100%;margin-top:11px"></img>
       </div>
       <div class="my-work-article-text">
-          <p style="margin-bottom:0px;margin-top:0px"><a target="_blank" href="" style="text-align:left;line height:1.45;font-size:30px;text-decoration:none;">ASUS CEO Program</a></p>
+          <p style="margin-bottom:0px;margin-top:0px"><a class="my-work-article-text-title" target="_blank" href="">ASUS CEO Program</a></p>
           <p style="margin-bottom:0px;margin-top:0px"><a style="color:#227700"><strong>Marketing and Sales Intern, </strong><em><strong> 2012</strong></em></a></p>
-          <p style="font-family:'open sans', sans-serif,Roboto;">After getting my computer science degree from Duke in 2015, I joined Google as a software engineer and co-founded Dancing Pineapple. These first two years in tech and music were filled with a rapid succession of ups and downs, and plenty of hard-won lessons.</p>
-          <p style="margin-bottom:35px;font-family:'open sans', sans-serif,Roboto;">I know that these lessons would have been really useful for me after my own graduation, so I decided to take some time to share some actionable advice for those of you just starting out in the real world.</p>
+          <p class="s-p-style">After getting my computer science degree from Duke in 2015, I joined Google as a software engineer and co-founded Dancing Pineapple. These first two years in tech and music were filled with a rapid succession of ups and downs, and plenty of hard-won lessons.</p>
+          <p class="s-p-style" style="margin-bottom:35px;">I know that these lessons would have been really useful for me after my own graduation, so I decided to take some time to share some actionable advice for those of you just starting out in the real world.</p>
           <p><a class="about-me-article-text-buttom" href="" data-component="buttom" target="_blank">VISIT WEBSITE</a></p>
       </div>
     </div>
@@ -518,10 +608,10 @@
   <div class="the-way-I-lived">
     <div class="the-way-I-lived-head">
       <div class="the-way-I-lived-title">
-        <p style="margin-bottom:5px"><strong>- The Way I Lived -</strong></p>
+        <p style="margin-bottom:5px"><strong>- Way I Lived -</strong></p>
       </div>
       <div class="the-way-I-lived-title-content">
-        <h4 style="text-align:center;padding-left:18%;padding-right: 18%;margin-top;color:#678;"><p>Let's run the dance floor, talk stage design, draft an idea on Sketch, and belt 90s R&B jams. Here are a few snaps I took before graduating college:</p></h4>
+        <h4><p>Let's run the dance floor, talk stage design, draft an idea on Sketch, and belt 90s R&B jams. Here are a few snaps I took before graduating college:</p></h4>
       </div>
     </div>
 
@@ -736,7 +826,7 @@
 
   <!-- Contact Me -->
   <div class="contact-me">
-    <div style="display:inline-block;font-size: 45px;vertical-align:top;padding-top: 90px;padding-right:30px">
+    <div class="contact-me-line1" style="display:inline-block;font-size: 45px;vertical-align:top;padding-top: 90px;padding-right:30px">
       <p><strong>-</strong></p>
     </div>
     <div class="contact-me-title">
@@ -744,11 +834,11 @@
       <p style="margin-bottom:0px;margin-top:0px;line-height:1.4"><strong>considerations of technical feasibility,</strong></p>
       <p style="margin-bottom:0px;margin-top:0px;line-height:1.4"><strong>user desirability, and business viability.</strong> </p>
     </div>
-    <div style="display:inline-block;font-size: 45px;vertical-align:top;padding-top: 90px;padding-left:30px">
+    <div class="contact-me-line2" style="display:inline-block;font-size: 45px;vertical-align:top;padding-top: 90px;padding-left:30px">
       <p><strong>-</strong></p>
     </div>
     <div class="contact-me-content">
-      <p style="margin-top:20px">Let's talk. <a href="http://bit.ly/2rdr17p" target="_blank" style="text-decoration:none;color:#37c">LinkedIn</a> or <a href="" target="_blank" style="text-decoration:none;color:#37c">Email</a> work best </p>
+      <p class="contact-me-content-text"style="margin-top:20px">Let's talk. <a href="http://bit.ly/2rdr17p" target="_blank" style="text-decoration:none;color:#37c">LinkedIn</a> or <a href="" target="_blank" style="text-decoration:none;color:#37c">Email</a> work best </p>
     </div>
     <div class="contact-me-logo">
       <a href="http://bit.ly/2rdr17p" target="_blank"><img src="http://res.cloudinary.com/ddyr9rwb5/image/upload/q_100/v1525232898/LinkedIn-icon.png" style="width:130px;height:130px;padding-right:5px"></img></a>
