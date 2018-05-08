@@ -52,7 +52,7 @@
         ;position:relative
     }
     .menu-mobile{
-      position: absolute;margin: 0 auto;background-color: white;height: 30px;width:30px;padding-top:20px;padding-left: 20px
+      display: none;position: absolute;background-color: white;height: 35px;width:40px;margin-top: 20px;margin-left: 20px;border-radius:3px
     }
     .title-group{
       padding: 20px;position:relative;top:40%;
@@ -366,6 +366,9 @@
     }
 
     @media(max-width:727px) {
+      .menu-mobile{
+        display: block;
+      }
       .about-me-text{
         text-align: center;padding-left:15%;padding-right: 15%;
       }
@@ -398,6 +401,9 @@
       }
     }
     @media(max-width:500px) {
+      .menu-mobile{
+        display: block;
+      }
       .about-me-text{
         text-align: center;padding-left:5%;padding-right: 5%;
       }
@@ -495,7 +501,7 @@
   <!-- Opening Page -->
   <div class="Opening-Page">
     <div class="menu-mobile">
-      <img src="http://res.cloudinary.com/ddyr9rwb5/image/upload/q_94/v1525751120/menu-icon.png"/>
+      <img src="http://res.cloudinary.com/ddyr9rwb5/image/upload/q_94/v1525751120/menu-icon.png" style="width:24px;height:30px;vertical-align:mdiddle;padding-left:8px;padding-top:2.4px" onclick=""/>
     </div>
     <div class="title-group">
       <p class="t-text">Hello, I'm</p>
