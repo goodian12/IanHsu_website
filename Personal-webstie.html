@@ -31,39 +31,91 @@
     @font-face{font-family:open_sans;font-style:italic;font-weight:600;src:url(https://static-assets.strikinglycdn.com/fonts/OpenSans-SemiboldItalic-webfont.70bafcaaadad9e17b9c7784abbc6b1c2.eot);src:url(https://static-assets.strikinglycdn.com/fonts/OpenSans-SemiboldItalic-webfont.70bafcaaadad9e17b9c7784abbc6b1c2.eot?#iefix) format("embedded-opentype"),url(https://static-assets.strikinglycdn.com/fonts/OpenSans-SemiboldItalic-webfont.719f7321a8366f4ee609737026432113.woff) format("woff"),url(https://static-assets.strikinglycdn.com/fonts/OpenSans-SemiboldItalic-webfont.64f886b232962979e2eaf29d93108286.ttf) format("truetype"),url(https://static-assets.strikinglycdn.com/fonts/OpenSans-SemiboldItalic-webfont.70eb93d7ba2ad241180085a9a74b0b95.svg#open_sanssemibold_italic) format("svg")}
 
     .s-p-style{
-      font-family:'Roboto','open sans', sans-serif;line-height:1.35;
+      font-family:'Roboto','open sans', sans-serif;line-height:1.4;
     }
-    /* Opening-Page CSS */
-    .Opening-Page{
-      width: 100%;height:716px;
-      /* Scrolling part */
 
-      /* The image used */
-        background-image: url("http://res.cloudinary.com/ddyr9rwb5/image/upload/v1525407343/wide_example.jpg");
-
-        /* Full height */
-        height: 100%;
-
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        ;position:relative
-    }
     .menu-mobile{
       display: none;position: absolute;background-color: white;height: 35px;width:40px;margin-top: 20px;margin-left: 20px;border-radius:3px
     }
-    .title-group{
-      padding: 20px;position:relative;top:40%;
-    }
-    .title-group>.t-text{
-      text-align:center;font-style:italic;font-size:23px;margin-bottom:0px;color: white;margin-top: 0px;
+
+    /* The side navigation menu */
+    .sidenav {
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Stay on top */
+        top: 0; /* Stay at the top */
+        left: 0;
+        background-color: white; /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
     }
 
+    /* The navigation menu links */
+    .sidenav a {
+        padding: 8px 8px 8px 40px;
+        text-decoration: none;
+        font-size: 32px;
+        color: #333 ;
+        display: block;
+        transition: 0.3s;
+        font-family: 'Brandon','Roboto',sans-serif;
+    }
+
+    /* When you mouse over the navigation links, change their color */
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    /* Position and style the close button (top right corner) */
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+    #main {
+        transition: margin-left .5s;
+        padding: 0px;
+    }
+
+    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+    @media screen and (max-height: 727px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 21px;}
+    }
+        .title-group{
+          padding: 20px;position:relative;top:40%;
+        }
+        .title-group>.t-text{
+          text-align:center;font-style:italic;font-size:25px;margin-bottom:0px;color: white;margin-top: 0px;
+        }
+
+    /* Opening-Page CSS */
+    .Opening-Page{
+      width: 100%;height:716px !important;
+      /* Scrolling part */
+
+      /* The image used */
+      background-image: url("http://res.cloudinary.com/ddyr9rwb5/image/upload/v1525407343/wide_example.jpg");
+
+      /* Full height */
+      height: 100%;
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position:relative
+    }
     /* Scrolling effect */
     body, html {
-      height: 100%;
+        height: 100%;
     }
 
     /* About Me CSS */
@@ -131,7 +183,6 @@
     /* The Way I Lived CSS */
     .the-way-I-lived{
       background-color:#eee;
-
     }
     .the-way-I-lived-title{
       text-align: center;padding-top: 55px;font-size: 45px;font-family: 'Brandon',"Roboto",sans-serif;
@@ -456,52 +507,81 @@
 
     // Open the Modal
     function openModal() {
-    document.getElementById('myModal').style.display = "block";
+      document.getElementById('myModal').style.display = "block";
     }
 
     // Close the Modal
     function closeModal() {
-    document.getElementById('myModal').style.display = "none";
+      document.getElementById('myModal').style.display = "none";
     }
 
     var slideIndex = 1;
-    showSlides(slideIndex);
+      showSlides(slideIndex);
 
     // Next/previous controls
     function plusSlides(n) {
-    showSlides(slideIndex += n);
+      showSlides(slideIndex += n);
     }
 
     // Thumbnail image controls
     function currentSlide(n) {
-    showSlides(slideIndex = n);
+      showSlides(slideIndex = n);
     }
 
     function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    var captionText = document.getElementById("caption");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
     }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+
+    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.body.style= "background-color:white"
+        document.getElementById("menu-mobile-display").style="display:none;"
+
     }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    captionText.innerHTML = dots[slideIndex-1].alt;
-    }
+
+    /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.body.style.backgroundColor = "white";
+        document.getElementById("menu-mobile-display").style="display:block;transition:1s"
+      }
 
   </script>
 
 <body>
   <!-- Opening Page -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a style="padding-top:50px;border-bottom: 1px solid #eee;"href="#">About Me</a>
+    <a style="border-bottom: 1px solid #eee;"href="#">My Work</a>
+    <a style="border-bottom: 1px solid #eee;"href="#">Way I Lived</a>
+    <a style="border-bottom: 1px solid #eee;"href="#">Contact Me</a>
+  </div>
+
+  <!-- Use any element to open the sidenav -->
+
+
+  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+
   <div class="Opening-Page">
-    <div class="menu-mobile">
-      <img src="http://res.cloudinary.com/ddyr9rwb5/image/upload/q_94/v1525751120/menu-icon.png" style="width:24px;height:30px;vertical-align:mdiddle;padding-left:8px;padding-top:2.4px" onclick=""/>
+    <div id="menu-mobile-display"class="menu-mobile" onclick="openNav();">
+      <img src="http://res.cloudinary.com/ddyr9rwb5/image/upload/q_94/v1525751120/menu-icon.png" style="width:24px;height:30px;vertical-align:mdiddle;padding-left:8px;padding-top:2.4px" onclick="javascript:this.disabled='true'"></img>
     </div>
     <div class="title-group">
       <p class="t-text">Hello, I'm</p>
@@ -827,7 +907,7 @@
     </div>
 
 
-    </div>
+
   </div>
 
   <!-- Contact Me -->
@@ -851,7 +931,7 @@
       <a href="" target="_blank"><img src="http://res.cloudinary.com/ddyr9rwb5/image/upload/q_100/v1525232898/gmail-icon.png" style="width:130px;height:130px;padding-left:5px"></img></a>
     </div>
   </div>
-
+</div>
 </body>
 
 </html>
