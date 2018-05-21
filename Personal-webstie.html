@@ -35,7 +35,7 @@
     }
 
     .menu-mobile{
-      display: none;position: absolute;background-color: white;height: 35px;width:40px;margin-top: 20px;margin-left: 20px;border-radius:3px
+      display: none;position:fixed;;background-color: white;height: 35px;width:40px;margin-top: 20px;margin-left: 20px;border-radius:3px
     }
 
     /* The side navigation menu */
@@ -56,7 +56,7 @@
     .sidenav a {
         padding: 8px 8px 8px 40px;
         text-decoration: none;
-        font-size: 32px;
+        font-size: 23px;
         color: #333 ;
         display: block;
         transition: 0.3s;
@@ -113,9 +113,13 @@
       background-size: cover;
       position:relative
     }
+    .t-title-text{
+      text-align:center;font-size:65px;font-family:'Brandon','Roboto',sans-serif;
+    }
     /* Scrolling effect */
     body, html {
         height: 100%;
+        overflow-x:hidden; /* 不出現橫向捲軸 */
     }
 
     /* About Me CSS */
@@ -191,78 +195,6 @@
       text-align:center;padding-left:18%;padding-right: 18%;margin-top;color:#678;
     }
 
-    /*
-    .the-way-I-lived-group-img{
-      text-align: center;padding-bottom: 130px
-    }
-    .the-way-I-lived-group-img1{
-      display:inline-block;vertical-align: top;filter: grayscale(100%);
-    }
-    .the-way-I-lived-group-img1:hover{
-      filter: grayscale(0%);
-    }
-    .the-way-I-lived-group-img2{
-      display:inline-block;vertical-align: top;filter: grayscale(100%);
-    }
-    .the-way-I-lived-group-img2:hover{
-      filter: grayscale(0%);
-    }
-    .the-way-I-lived-group-img3{
-      display:inline-block;vertical-align: top;filter: grayscale(100%);
-    }
-    .the-way-I-lived-group-img3:hover{
-      filter: grayscale(0%);
-    }
-    .the-way-I-lived-group-img4{
-      display:inline-block;vertical-align: top;filter: grayscale(100%);
-    }
-    .the-way-I-lived-group-img4:hover{
-      filter: grayscale(0%);
-    }
-    .the-way-I-lived-group-img5{
-      display:inline-block;vertical-align: top;filter: grayscale(100%);
-    }
-    .the-way-I-lived-group-img5:hover{
-      filter: grayscale(0%);
-    }
-    .the-way-I-lived-group-img6{
-      display:inline-block;vertical-align: top;filter: grayscale(100%);
-    }
-    .the-way-I-lived-group-img6:hover{
-      filter: grayscale(0%);
-    }
-    .the-way-I-lived-group-img7{
-      display:inline-block;vertical-align: top;filter: grayscale(100%);
-    }
-    .the-way-I-lived-group-img7:hover{
-      filter: grayscale(0%);
-    }
-    .the-way-I-lived-group-img8{
-      display:inline-block;vertical-align: top;filter: grayscale(100%);
-    }
-    .the-way-I-lived-group-img8:hover{
-      filter: grayscale(0%);
-    }
-    .the-way-I-lived-group-img9{
-      display:inline-block;vertical-align: top;filter: grayscale(100%);
-    }
-    .the-way-I-lived-group-img9:hover{
-      filter: grayscale(0%);
-    }
-    .the-way-I-lived-group-img10{
-      display:inline-block;vertical-align: top;filter: grayscale(100%);
-    }
-    .the-way-I-lived-group-img10:hover{
-      filter: grayscale(0%);
-    }
-    .the-way-I-lived-group-img11{
-      display:inline-block;vertical-align: top;filter: grayscale(100%);
-    }
-    .the-way-I-lived-group-img11:hover{
-      filter: grayscale(0%);
-    }
-    */
-
     /* Img CSS lightbox */
     .row{
       text-align: center;padding-bottom: 90px
@@ -270,6 +202,10 @@
     .row > .column {
       padding: 0 auto;
       text-align: center;
+
+    }
+    .row > .column > img{
+      width:200px;height:auto;display:inline-block;
     }
 
     .row:after {
@@ -277,6 +213,7 @@
       display: table;
       clear: both;
     }
+
 
     /* Create four equal columns that floats next to eachother */
     .column {
@@ -394,6 +331,7 @@
     }
 
 
+
     /* Contact Me CSS */
     .contact-me{
       text-align: center;margin: 0px auto;
@@ -450,6 +388,9 @@
       .contact-me-line2>p{
         display: none;
       }
+      .row > .column > img{
+        width:45%;height:auto;display:inline-block;
+      }
     }
     @media(max-width:500px) {
       .menu-mobile{
@@ -482,8 +423,14 @@
       .contact-me-line1>p{
         display: none;
       }
+      .contact-me-line1{
+        padding: 0px !important;
+      }
       .contact-me-line2>p{
         display: none;
+      }
+      .contact-me-line2{
+        padding: 0px !important;
       }
       .the-way-I-lived-title-content{
         padding-left:5%;padding-right: 5%;
@@ -494,7 +441,35 @@
       .contact-me-content-text{
         font-size: 18px
       }
+      .row > .column > img{
+        width:200px;height:auto;display:inline-block;
+      }
+      .s-p-style{
+        font-family:'Roboto','open sans', sans-serif;line-height:1.4;font-size: 17px
+      }
 
+    }
+    @media(max-width:400px){
+      .row > .column > img{
+        width:184.5px;height:auto;display:inline-block;
+      }
+      .t-title-text{
+        text-align:center;font-size:60px;font-family:'Brandon','Roboto',sans-serif;
+      }
+      .s-p-style{
+        font-family:'Roboto','open sans', sans-serif;line-height:1.4;font-size: 15px
+      }
+      .contact-me-title{
+        font-size: 18px
+      }
+      .contact-me-content-text{
+        font-size: 16px
+      }
+    }
+    @media(max-width:350px){
+      .row > .column > img{
+        width:175px;height:auto;display:inline-block;
+      }
     }
 
   </style>
@@ -585,7 +560,7 @@
     </div>
     <div class="title-group">
       <p class="t-text">Hello, I'm</p>
-      <div class="t-title-text" style="text-align:center;font-size:65px;font-family:'Brandon','Roboto',sans-serif;,"><strong style="color:white">- IAN HSU -</strong></div>
+      <div class="t-title-text"><strong style="color:white">- IAN HSU -</strong></div>
     </div>
   </div>
 
@@ -701,99 +676,39 @@
       </div>
     </div>
 
-    <!-- Img gallery
-    <div class="the-way-I-lived-group-img">
-      <div class="the-way-I-lived-group-img1">
-        <div>
-          <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_900,w_1200/wpply9xpgeeruqbvkqvg.jpg" data-src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_900,w_1200/wpply9xpgeeruqbvkqvg.jpg" style="width:200px;height:auto"></img></a>
-        </div>
-      </div>
-      <div class="the-way-I-lived-group-img2">
-        <div>
-          <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_900,w_1200/wpply9xpgeeruqbvkqvg.jpg" style="width:200px;height:auto"></img>
-        </div>
-      </div>
-      <div class="the-way-I-lived-group-img3">
-        <div>
-          <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_900,w_1200/wpply9xpgeeruqbvkqvg.jpg" style="width:200px;height:auto"></img>
-        </div>
-      </div>
-      <div class="the-way-I-lived-group-img4">
-        <div>
-          <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_900,w_1200/wpply9xpgeeruqbvkqvg.jpg" style="width:200px;height:auto"></img>
-        </div>
-      </div>
-      <div class="the-way-I-lived-group-img5">
-        <div>
-          <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_900,w_1200/wpply9xpgeeruqbvkqvg.jpg" style="width:200px;height:auto"></img>
-        </div>
-      </div>
-      <div class="the-way-I-lived-group-img6">
-        <div>
-          <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_900,w_1200/wpply9xpgeeruqbvkqvg.jpg" style="width:200px;height:auto"></img>
-        </div>
-      </div>
-      <div class="the-way-I-lived-group-img7">
-        <div>
-          <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_900,w_1200/wpply9xpgeeruqbvkqvg.jpg" style="width:200px;height:auto"></img>
-        </div>
-      </div>
-      <div class="the-way-I-lived-group-img8">
-        <div>
-          <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_900,w_1200/wpply9xpgeeruqbvkqvg.jpg" style="width:200px;height:auto"></img>
-        </div>
-      </div>
-      <div class="the-way-I-lived-group-img9">
-        <div>
-          <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_900,w_1200/wpply9xpgeeruqbvkqvg.jpg" style="width:200px;height:auto"></img>
-        </div>
-      </div>
-      <div class="the-way-I-lived-group-img10">
-        <div>
-          <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_900,w_1200/wpply9xpgeeruqbvkqvg.jpg" style="width:200px;height:auto"></img>
-        </div>
-      </div>
-      <div class="the-way-I-lived-group-img11">
-        <div>
-          <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_900,w_1200/wpply9xpgeeruqbvkqvg.jpg" style="width:200px;height:auto"></img>
-        </div>
-      </div>
-    </div>
-  -->
-
     <!-- Img gallery lightbox -->
 
     <!-- Images used to open the lightbox -->
     <div class="row">
       <div class="column">
-        <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_900,w_1200/wpply9xpgeeruqbvkqvg.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" style="width:200px;height:auto;display:inline-block">
+        <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_900,w_1200/wpply9xpgeeruqbvkqvg.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" >
       </div>
       <div class="column">
-        <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_900,w_1200/wpply9xpgeeruqbvkqvg.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" style="width:200px;height:auto;display:inline-block">
+        <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_900,w_1200/wpply9xpgeeruqbvkqvg.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" >
       </div>
       <div class="column">
-        <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_900,w_1200/wpply9xpgeeruqbvkqvg.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" style="width:200px;height:auto;display:inline-block">
+        <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_900,w_1200/wpply9xpgeeruqbvkqvg.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" >
       </div>
       <div class="column">
-        <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_900,w_1200/wpply9xpgeeruqbvkqvg.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" style="width:200px;height:auto;display:inline-block">
+        <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_900,w_1200/wpply9xpgeeruqbvkqvg.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" >
       </div>
       <div class="column">
-        <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_900,w_1200/wpply9xpgeeruqbvkqvg.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow" style="width:200px;height:auto;display:inline-block">
+        <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_900,w_1200/wpply9xpgeeruqbvkqvg.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow" >
       </div>
       <div class="column">
-        <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_900,w_1200/wpply9xpgeeruqbvkqvg.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow" style="width:200px;height:auto;display:inline-block">
+        <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_900,w_1200/wpply9xpgeeruqbvkqvg.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow" >
       </div>
       <div class="column">
-        <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_900,w_1200/wpply9xpgeeruqbvkqvg.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow" style="width:200px;height:auto;display:inline-block">
+        <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_900,w_1200/wpply9xpgeeruqbvkqvg.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow" >
       </div>
       <div class="column">
-        <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_900,w_1200/wpply9xpgeeruqbvkqvg.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow" style="width:200px;height:auto;display:inline-block">
+        <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_900,w_1200/wpply9xpgeeruqbvkqvg.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow" >
       </div>
       <div class="column">
-        <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_900,w_1200/wpply9xpgeeruqbvkqvg.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow" style="width:200px;height:auto;display:inline-block">
+        <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_900,w_1200/wpply9xpgeeruqbvkqvg.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow" >
       </div>
       <div class="column">
-        <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_900,w_1200/wpply9xpgeeruqbvkqvg.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow" style="width:200px;height:auto;display:inline-block">
+        <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_900,w_1200/wpply9xpgeeruqbvkqvg.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow">
       </div>
     </div>
 
